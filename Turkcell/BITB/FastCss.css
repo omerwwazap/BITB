@@ -1,0 +1,409 @@
+/* This is a complete mess.. Don't ask how i did it. */
+
+html {
+    font-family: GreycliffCF, sans-serif, museo-sans;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(41, 98, 255, .2)), to(rgba(255, 255, 255, 0)));
+    background-image: -o-linear-gradient(top, rgba(41, 98, 255, .2), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to bottom, rgba(41, 98, 255, .2), rgba(255, 255, 255, 0));
+    min-height: calc(100vh - 210px);
+    background-color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: museo-sans;
+    src: url("../assets/fonts/typekit/museo-sans.woff2") format("woff2"), url("../assets/fonts/typekit/museo-sans.woff") format("woff"), url("../assets/fonts/typekit/museo-sans.otf") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 300
+}
+
+@font-face {
+    font-family: GreycliffCF;
+    src: url("../assets/fonts/GreycliffCF-Regular.eot");
+    src: url("../assets/fonts/GreycliffCF-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/GreycliffCF-Regular.woff2") format("woff2"), url("../assets/fonts/GreycliffCF-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap
+}
+
+.space {
+    height: 4rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+.space-fst {
+    height: 4rem;
+    text-align: center;
+    border-bottom: 1px solid #f5f8fa;
+    margin-bottom: 1.25rem rem;
+    line-height: 1.875em;
+    font-size: 1.6em;
+}
+
+.labels {
+    font-family: GreycliffCF, sans-serif;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    font-family: GreycliffCF, sans-serif;
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.btn {
+    background-color: var(--themeContent, #2962ff);
+}
+
+.btn:hover {
+    background-color: #2962ff;
+}
+
+.btn {
+    font-family: GreycliffCF, sans-serif;
+    width: 100%;
+    line-height: 2.5rem;
+    height: 2.8125rem;
+    background-color: #2962ff;
+    padding: 0 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1.4375rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: .9375rem;
+    font-weight: 700;
+    display: inline-block;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.main-footer {
+    position: relative;
+    font-weight: 550;
+}
+
+.main-footer>.container {
+    margin: 0 auto;
+    max-width: 40rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.main-footer__nav {
+    padding: 1.375rem 1rem 0 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.main-footer__nav a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 14px;
+    color: #272d33;
+    line-height: 1.43
+}
+
+.tab__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: .9375rem;
+    background: #f5f8fa;
+    border-radius: .75rem;
+    overflow: hidden;
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.tab__button {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 40px;
+    font-weight: 700;
+    color: #8f98a1
+}
+
+.tab__button span {
+    font-size: .875rem
+}
+
+.tab__button span b {
+    display: block;
+    font-size: .625rem
+}
+
+.tab__button i {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 8px;
+    font-size: 1.5rem
+}
+
+.tab__button--active {
+    background: #fff;
+    color: #272d33;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .1)
+}
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    font-size: 14px;
+    color: #272d33;
+    font-weight: 700;
+    border: 1px solid #c2c9d0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    width: 100%;
+    padding: 0.875rem 1rem;
+    min-height: 3rem;
+    font-family: GreycliffCF, sans-serif;
+}
+
+.input-labal label {
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: #c2c9d0;
+    transition: 0.5s;
+    pointer-events: none;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    font-family: GreycliffCF, sans-serif;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    font-family: GreycliffCF, sans-serif;
+    background-color: #2962ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.05em;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.btn--transparent {
+    color: #2962ff;
+    background-color: transparent;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    line-height: 1;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.btn--transparent .button-logo {
+    font-family: museo-sans;
+    font-size: .9375rem;
+    text-align: center;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.875rem;
+    outline: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+    margin-right: 6px
+}
+
+.btn--transparent:hover {
+    background-color: transparent
+}
+
+.btn--transparent:active {
+    background-color: transparent
+}
+
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 40rem;
+    width: calc(100% - 30px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}

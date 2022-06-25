@@ -1,0 +1,434 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: museo-sans;
+    src: url("../../assets/fonts/typekit/museo-sans.woff2") format("woff2"), url("../../assets/fonts/typekit/museo-sans.woff") format("woff"), url("../../assets/fonts/typekit/museo-sans.otf") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 300
+}
+
+@font-face {
+    font-family: GreycliffCF;
+    src: url("../../assets/fonts/GreycliffCF-Regular.eot");
+    src: url("../../assets/fonts/GreycliffCF-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/GreycliffCF-Regular.woff2") format("woff2"), url("../../assets/fonts/GreycliffCF-Regular.woff") format("woff");
+    font-weight: 400;
+    font-display: swap
+}
+
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light");
+}
+
+body {
+    background: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+}
+
+.big-background {
+    z-index: 0;
+    text-align: center;
+    height: 100%;
+    min-height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+strong {
+    font-weight: 700;
+    color: #2855ac;
+}
+
+a,
+a:hover,
+a:focus {
+    color: #fefefe;
+    text-decoration: none;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+img {
+    max-width: 100%;
+}
+
+::-moz-selection {
+    background: #42bfc2;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #42bfc2;
+    color: #fff;
+    text-shadow: none;
+}
+
+.inner-bg {
+    padding: 75px 0 40px 0;
+}
+
+.coming-soon .logo {
+    padding-bottom: 20px;
+}
+
+.coming-soon .logo h1 {
+    margin: 0;
+}
+
+.coming-soon .logo a {
+    display: inline-block;
+    width: 351px;
+    height: 110px;
+    background: url(../img/logo3.png) center center no-repeat;
+    text-indent: -99999px;
+}
+
+.coming-soon p {
+    margin: 60px 0 10px 0;
+    padding: 0 120px;
+    font-size: 20px;
+    line-height: 36px;
+    color: white;
+}
+
+.timer {
+    margin-top: 60px;
+}
+
+.timer .days-wrapper,
+.timer .hours-wrapper,
+.timer .minutes-wrapper,
+.timer .seconds-wrapper {
+    display: inline-block;
+    width: 160px;
+    margin: 0 10px;
+    font-size: 18px;
+    padding: 25px 10px;
+    background-color: rgba(255, 255, 255, 0.17);
+    border-radius: 0;
+    border: 1px solid rgba(255, 255, 255, 0.37);
+    box-shadow: 1px 0px 4px #5f5f5f;
+}
+
+.timer .days,
+.timer .hours,
+.timer .minutes,
+.timer .seconds {
+    font-size: 80px;
+    font-weight: 100;
+    line-height: 90px;
+}
+
+
+/***** Footer *****/
+
+footer {
+    margin-top: 60px;
+    padding: 20px 0 15px 0;
+}
+
+.footer-copyright p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 32px;
+    color: #fff;
+    text-align: left;
+}
+
+.footer-copyright a {
+    color: #fff;
+    border-bottom: 1px dotted #fff;
+}
+
+.footer-copyright a:hover {
+    color: #fff;
+    border: 0;
+}
+
+.footer-social {
+    text-align: right;
+}
+
+
+/* social icons */
+
+ul.social-icon {}
+
+ul.social-icon li {
+    display: inline;
+    list-style: none;
+}
+
+ul.social-icon li a i {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+input[type="text"] {
+    margin: 0;
+    padding: 0 10px;
+    vertical-align: middle;
+    background: none;
+    border: 1px solid rgba(227, 230, 238, 0.8);
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #fff;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-right: -4px;
+}
+
+input[type="text"]:focus {
+    outline: 0;
+    border: 1px solid #fff;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+input[type="text"]:-moz-placeholder {
+    color: #fff;
+}
+
+input[type="text"]:-ms-input-placeholder {
+    color: #fff;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: 0;
+    background: #555;
+    color: #fff;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .coming-soon p {
+        padding: 0;
+    }
+    .timer .days-wrapper,
+    .timer .hours-wrapper,
+    .timer .minutes-wrapper,
+    .timer .seconds-wrapper {
+        width: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .coming-soon p {
+        padding: 0;
+    }
+    .timer .days-wrapper,
+    .timer .hours-wrapper,
+    .timer .minutes-wrapper,
+    .timer .seconds-wrapper {
+        width: 150px;
+    }
+    .timer .slash {
+        display: none;
+    }
+    .footer-copyright p,
+    .footer-social {
+        text-align: center;
+    }
+    .footer-copyright {
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1,
+    h2 {
+        font-size: 32px;
+    }
+}
+
+.bsk-container {
+    margin-top: 15px;
+}
+
+.x-icon {
+    height: 1em;
+    width: 1em;
+    top: .125em;
+    position: relative;
+}
+
+.x-alt {
+    color: #777;
+}
+
+
+/** Hızlı Giriş **/
+
+.rcorners1 {
+    border-radius: 4.5rem/100%;
+    padding: 0 1.5rem;
+    min-width: 8.75rem;
+    width: 25.0rem;
+    height: 5rem;
+    background-color: #fff;
+    justify-content: center;
+    color: #253342;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    line-height: 2;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+}
+
+#hizligiris-logo {
+    width: 20%;
+    padding: 0 1rem;
+}
+
+
+/*** BITB ***/
+
+#title-bar {
+    height: 31px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    font-weight: normal;
+}
+
+#logo {
+    padding-left: 5px;
+    vertical-align: middle;
+}
+
+#logo-description {
+    color: white;
+    font-size: 12px;
+    font-family: "system";
+    vertical-align: middle;
+}
+
+#minimize {
+    color: white;
+    font-size: 12px;
+    padding: 9px 15px 7px 15px;
+}
+
+#square {
+    color: white;
+    font-size: 22px;
+    padding: 0px 15px 5px 15px;
+}
+
+#exit {
+    color: white;
+    font-size: 15px;
+    padding: 7px 17px 7px 17px;
+}
+
+#url-bar {
+    height: 28px;
+    background-color: #1b1a1a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#url-bar::-webkit-scrollbar {
+    display: none;
+}
+
+#ssl-padlock {
+    user-select: none;
+    padding-left: 8px;
+    margin-right: 8px;
+}
+
+#domain-name {
+    color: white;
+    font-size: 14px;
+    font-family: "system";
+}
+
+#domain-path {
+    color: #9c9898;
+    font-size: 14px;
+    font-family: "system";
+}
+
+#title-bar-width {
+    width: calc(100% + 2px);
+    /* 2px added to allow for border on iframe */
+}
+
+#content {
+    width: 100%;
+    height: 700px;
+    border: 1px solid gray;
+}
+
+#window {
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 759px;
+    /* title bar height + content height */
+    width: 40%;
+}
