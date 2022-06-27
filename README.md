@@ -11,19 +11,19 @@ BITB template for Turkcell's FastLogin/HızlıGiriş SSO service. Used in intern
 
 ### Demo
 
-![Demo-BITB](ReadmeAssets/Fastlogin-Demo.gif)
+ADD GIF![Demo-BITB](ReadmeAssets/Fastlogin-Demo.gif)
 
 ### Detecting BITB
 
 - **Dragging the Window**
   - Drag the window to the edge of the browser. If the window cannot escape the browser then it's not a real window.
-  - ![Demo-Drag](ReadmeAssets/DraggingOutSide-Demo.gif)
+  - ADD GIF![Demo-Drag](ReadmeAssets/DraggingOutSide-Demo.gif)
 - **Minimize / Close the Windows**
   - Minimize or Close button will not work as intended as CSS/JS doesn't have the functionality to mimic the actual action and since there is no open windows to close or minimize.
   - ![Demo-Close](ADD GIF)
 - **Maximize the Windows**
   - Maximize button will not work as intended as CSS/JS doesn't have the functionality to mimic the actual action.
-  - ![Demo-Maximize](ReadmeAssets/Maximize-Demo.gif)
+  - ADD GIF![Demo-Maximize](ReadmeAssets/Maximize-Demo.gif)
 - **Resizing the Window**
   - This effect could be mimicked with CSS/JS but this repo doesn't have it.
   - ![Demo-Resize](ADD GIF)
