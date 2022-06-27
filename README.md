@@ -1,6 +1,6 @@
 ## Browser In The Browser (BITB) - Turkcell FastLogin/HızlıGiriş
 
-BITB template for Turkcell's FastLogin/HızlıGiriş SSO service. Used in internal Phishing attacks as such it is designed to **NOT** to be an exact copy of the real SSO.
+BITB template for Turkcell's FastLogin/HızlıGiriş SSO service. Used in internal Phishing attacks as such it is designed to **NOT** be an exact copy of the real SSO.
 
 ### Information
 
