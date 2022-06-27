@@ -9,8 +9,6 @@ BITB template for Turkcell's FastLogin/HızlıGiriş SSO service. Used in intern
 - CSS to use System Default Fonts instead of browser fallback fonts
 - Has slight delay to the pop-up window as it appears.
 
-![Demo](ADD GIF)
-
 ### Detecting BITB
 
 - **Dragging the Window**
@@ -22,6 +20,13 @@ BITB template for Turkcell's FastLogin/HızlıGiriş SSO service. Used in intern
 - **Minimize / Close the Windows**
   - XXX
   - ![Demo-Close](ADD GIF)
+- **Maximize the Windows**
+  - XXX
+  - ![Demo-Close](ADD GIF)
+  
+### Using
+
+- Simply add a backend service to the BITB to revice the inputs.
 
 ### Credits
 
