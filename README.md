@@ -9,21 +9,25 @@ BITB template for Turkcell's FastLogin/HızlıGiriş SSO service. Used in intern
 - CSS to use System Default Fonts instead of browser fallback fonts
 - Has slight delay to the pop-up window as it appears.
 
+### Demo
+
+![Demo-BITB](ReadmeAssets/Fastlogin-Demo.gif)
+
 ### Detecting BITB
 
 - **Dragging the Window**
   - Drag the window to the edge of the browser. If the window cannot escape the browser then it's not a real window.
-  - ![Demo-Drag](ADD GIF)
-- **Resizing the Window**
-  - XXX
-  - ![Demo-Resize](ADD GIF)
+  - ![Demo-Drag](ReadmeAssets/DraggingOutSide-Demo.gif)
 - **Minimize / Close the Windows**
-  - XXX
+  - Minimize or Close button will not work as intended as CSS/JS doesn't have the functionality to mimic the actual action and since there is no open windows to close or minimize.
   - ![Demo-Close](ADD GIF)
 - **Maximize the Windows**
-  - XXX
-  - ![Demo-Close](ADD GIF)
-  
+  - Maximize button will not work as intended as CSS/JS doesn't have the functionality to mimic the actual action.
+  - ![Demo-Maximize](ReadmeAssets/Maximize-Demo.gif)
+- **Resizing the Window**
+  - This effect could be mimicked with CSS/JS but this repo doesn't have it.
+  - ![Demo-Resize](ADD GIF)
+
 ### Using
 
 - Simply add a backend service to the BITB to revice the inputs.
@@ -31,7 +35,7 @@ BITB template for Turkcell's FastLogin/HızlıGiriş SSO service. Used in intern
 ### Credits
 
 - Web Template from: [Tech City Free Coming Soon Bootstrap Responsive Template](https://github.com/learning-zone/website-templates)
-- Browser In The Browser (BITB) Repo: [mrd0x/BITB](https://mrd0x.com/browser-in-the-browser-phishing-attack/)
+- Browser In The Browser (BITB) Repo: [mrd0x/BITB](https://github.com/mrd0x/BITB)
   - [Browser In The Browser (BITB) Attack](https://mrd0x.com/browser-in-the-browser-phishing-attack/)
 - Also Check Out
   - [BITB - Framework](https://github.com/surya-dev-singh/BITB-framwork)
