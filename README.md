@@ -13,6 +13,10 @@ BITB template for Turkcell's FastLogin/HızlıGiriş SSO service. Used in intern
 
 ADD GIF![Demo-BITB](ReadmeAssets/Fastlogin-Demo.gif)
 
+### Original vs BITB
+
+ADD IMAGE
+
 ### Detecting BITB
 
 - **Dragging the Window**
