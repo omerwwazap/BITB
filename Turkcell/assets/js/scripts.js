@@ -11,11 +11,11 @@ jQuery(document).ready(function() {
     new WOW().init();
 
     /*
-	    Countdown initializer
+        Countdown initializer
         Check later: 
         https://stackoverflow.com/questions/13412153/countdown-timer-that-doesnt-reset-when-you-refresh-the-page
         http://keith-wood.name/countdown.html
-	*/
+    */
     var now = new Date();
     var countTo = 30 * 24 * 60 * 60 * 1000 + now.valueOf();
     $('.timer').countdown(countTo, function(event) {
@@ -34,83 +34,83 @@ var titleBar = document.getElementById("title-bar");
 
 ////////////////// Hover listeners //////////////////
 // Check if the dark-mode Media-Query matches
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        minimize.addEventListener('mouseover', function handleMouseOver() {
-            minimize.style.backgroundColor = '#272727';
-            minimize.style.cursor = 'context-menu';
-        });
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    minimize.addEventListener('mouseover', function handleMouseOver() {
+        minimize.style.backgroundColor = '#272727';
+        minimize.style.cursor = 'context-menu';
+    });
 
-        minimize.addEventListener('mouseout', function handleMouseOut() {
-            minimize.style.backgroundColor = 'black';
-            minimize.style.cursor = 'default';
-        });
+    minimize.addEventListener('mouseout', function handleMouseOut() {
+        minimize.style.backgroundColor = 'black';
+        minimize.style.cursor = 'default';
+    });
 
-        square.addEventListener('mouseover', function handleMouseOver() {
-            square.style.backgroundColor = '#272727';
-            square.style.cursor = 'context-menu';
-        });
+    square.addEventListener('mouseover', function handleMouseOver() {
+        square.style.backgroundColor = '#272727';
+        square.style.cursor = 'context-menu';
+    });
 
-        square.addEventListener('mouseout', function handleMouseOut() {
-            square.style.backgroundColor = 'black';
-            square.style.cursor = 'default';
-        });
+    square.addEventListener('mouseout', function handleMouseOut() {
+        square.style.backgroundColor = 'black';
+        square.style.cursor = 'default';
+    });
 
-        exit.addEventListener('mouseover', function handleMouseOver() {
-            exit.style.backgroundColor = 'red';
-            exit.style.cursor = 'context-menu';
-        });
+    exit.addEventListener('mouseover', function handleMouseOver() {
+        exit.style.backgroundColor = 'red';
+        exit.style.cursor = 'context-menu';
+    });
 
-        exit.addEventListener('mouseout', function handleMouseOut() {
-            exit.style.backgroundColor = 'black';
-            exit.style.cursor = 'default';
-        });
+    exit.addEventListener('mouseout', function handleMouseOut() {
+        exit.style.backgroundColor = 'black';
+        exit.style.cursor = 'default';
+    });
 
-        titleBar.addEventListener('mouseover', function handleMouseOver() {
-            titleBar.style.cursor = 'context-menu';
-        });
+    titleBar.addEventListener('mouseover', function handleMouseOver() {
+        titleBar.style.cursor = 'context-menu';
+    });
 
-        titleBar.addEventListener('mouseout', function handleMouseOver() {
-            titleBar.style.cursor = 'default';
-        });
-    } else {
-        minimize.addEventListener('mouseover', function handleMouseOver() {
-            minimize.style.backgroundColor = 'rgba(0, 0, 0, 0.09765625)';
-            minimize.style.cursor = 'context-menu';
-          });
-          
-          minimize.addEventListener('mouseout', function handleMouseOut() {
-            minimize.style.backgroundColor = '#d6dae0';
-            minimize.style.cursor = 'default';
-          });
-          
-          square.addEventListener('mouseover', function handleMouseOver() {
-            square.style.backgroundColor = 'rgba(0, 0, 0, 0.09765625)';
-            square.style.cursor = 'context-menu';
-          });
-          
-          square.addEventListener('mouseout', function handleMouseOut() {
-            square.style.backgroundColor = '#d6dae0';
-            square.style.cursor = 'default';
-          });
-          
-          exit.addEventListener('mouseover', function handleMouseOver() {
-            exit.style.backgroundColor = '#E81123';
-            exit.style.cursor = 'context-menu';
-          });
-          
-          exit.addEventListener('mouseout', function handleMouseOut() {
-            exit.style.backgroundColor = '#d6dae0';
-            exit.style.cursor = 'default';
-          });
-          
-          titleBar.addEventListener('mouseover', function handleMouseOver() {
-            titleBar.style.cursor = 'context-menu';
-          });
-          
-          titleBar.addEventListener('mouseout', function handleMouseOver() {
-            titleBar.style.cursor = 'default';
-          });
-    }
+    titleBar.addEventListener('mouseout', function handleMouseOver() {
+        titleBar.style.cursor = 'default';
+    });
+} else {
+    minimize.addEventListener('mouseover', function handleMouseOver() {
+        minimize.style.backgroundColor = 'rgba(0, 0, 0, 0.09765625)';
+        minimize.style.cursor = 'context-menu';
+    });
+
+    minimize.addEventListener('mouseout', function handleMouseOut() {
+        minimize.style.backgroundColor = '#d6dae0';
+        minimize.style.cursor = 'default';
+    });
+
+    square.addEventListener('mouseover', function handleMouseOver() {
+        square.style.backgroundColor = 'rgba(0, 0, 0, 0.09765625)';
+        square.style.cursor = 'context-menu';
+    });
+
+    square.addEventListener('mouseout', function handleMouseOut() {
+        square.style.backgroundColor = '#d6dae0';
+        square.style.cursor = 'default';
+    });
+
+    exit.addEventListener('mouseover', function handleMouseOver() {
+        exit.style.backgroundColor = '#E81123';
+        exit.style.cursor = 'context-menu';
+    });
+
+    exit.addEventListener('mouseout', function handleMouseOut() {
+        exit.style.backgroundColor = '#d6dae0';
+        exit.style.cursor = 'default';
+    });
+
+    titleBar.addEventListener('mouseover', function handleMouseOver() {
+        titleBar.style.cursor = 'context-menu';
+    });
+
+    titleBar.addEventListener('mouseout', function handleMouseOver() {
+        titleBar.style.cursor = 'default';
+    });
+}
 
 
 //////////////// Make window draggable start ////////////////
