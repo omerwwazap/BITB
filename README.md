@@ -33,7 +33,7 @@ BITB template for Turkcell's FastLogin/HızlıGiriş SSO service. Used in intern
   - This effect could be mimicked with CSS/JS but this repo doesn't have it.
 - **Checking the Link** PC ❌ | Phone ✅
   - If the BITB opens on a new page for small screened devices, the only ways to catch the BIBT is trough the link - url bar.  
-  - ![Phone-Example](ReadmeAssets/Phone-Example-2.png)
+  - ![Phone-Example](ReadmeAssets/Phone-Example-2.PNG)
 - **Browser extension** PC ✅ | Phone ❌
   - @odacavo released a great browser extension that can detect and warn users about embedded iframe.
   - [Repo Available Here.](https://github.com/odacavo/enhanced-iframe-protection)
