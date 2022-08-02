@@ -20,6 +20,7 @@ BITB template for Turkcell's FastLogin/HızlıGiriş SSO service. Used in intern
 ![RealvsFake](ReadmeAssets/RealvsFake.png)
 
 ### Detecting BITB
+> PC ✅ | Phone ❌ -> Means the detection technique works on PC's but not on Phones
 
 - **Dragging the Window** PC ✅ | Phone ❌
   - Drag the window to the edge of the browser. If the window cannot escape the browser then it's not a real window.
@@ -32,7 +33,7 @@ BITB template for Turkcell's FastLogin/HızlıGiriş SSO service. Used in intern
 - **Resizing the Window** PC ✅ | Phone ❌
   - This effect could be mimicked with CSS/JS but this repo doesn't have it.
 - **Checking the Link** PC ❌ | Phone ✅
-  - If the BITB opens on a new page for small screened devices, the only ways to catch the BIBT is trough the link - url bar.  
+  - This repo opens the BITB Page as a new tab on small screen devices as such custom BITB url's wont work and can be easlly detected. This technique doesnt work on PC's. 
   - ![Phone-Example](ReadmeAssets/Phone-Example-2.PNG)
 - **Browser extension** PC ✅ | Phone ❌
   - @odacavo released a great browser extension that can detect and warn users about embedded iframe.
