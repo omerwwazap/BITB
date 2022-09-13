@@ -51,6 +51,8 @@ BITB template for Turkcell's FastLogin/HızlıGiriş SSO service. Used in intern
 - Also Check Out
   - [BITB - Framework](https://github.com/surya-dev-singh/BITB-framwork)
   - [Modern Phishing Tool With Advanced Functionality  - Hidden Eye](https://github.com/darkmidus/HiddenEye)
+- BITB in the Wild
+  - [Group IB Blog - Letting off steam](https://blog.group-ib.com/steam)
   
 ### Disclaimer
 Usage of these templates for attacking targets without prior consent is illegal. It's the end user's responsibility to obey all applicable laws. The developer is not responsible for any misuse of these templates.
